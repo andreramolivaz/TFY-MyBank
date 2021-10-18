@@ -1,0 +1,9 @@
+https://api.worldtradingdata.com/api/v1/stock?symbol=INFY.NS&api_token=YUTfQ9vZyjej3rECIhLVPthnNV5ply6MAbpI86fbq05nR0LyieZKWGloKRZ1
+
+http://api.marketstack.com/v1/eod?access_key=7636d77b2e219a1319e7f9b167abf4b7&symbols=AAPL
+
+
+http://api.marketstack.com/v1/tickers/AAPL?access_key=7636d77b2e219a1319e7f9b167abf4b7&simbols=AAPL
+
+
+https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=GOOG&apikey=CKD2EM1LOSXO15WS
