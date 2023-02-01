@@ -13,15 +13,15 @@ A platform that allows users to simulate buying and selling stocks and create a 
 <div align="center">
  <table>
    <tr>
-    <td><img src="http://vdapoi.altervista.org/2.png"  /><br><em>Login</em></td> 
-    <td><img src="http://vdapoi.altervista.org/3.png"  /><br><em>Personal area</em></td> 
-    <td><img src="http://vdapoi.altervista.org/4.png" /><br><em>Add stocks</em></td> 
-    <td><img src="http://vdapoi.altervista.org/5.png"  /><br><em>Watching list</em></td> 
-    <td><img src="http://vdapoi.altervista.org/6.png" /><br><em>Graphs based on DataBase</em></td> 
-    <td><img src="http://vdapoi.altervista.org/7.png"  /><br><em>Real time data stock</em></td> 
-    <td><img src="http://vdapoi.altervista.org/8.png" /><br><em>Standard portfolio</em></td> 
-    <td><img src="http://vdapoi.altervista.org/9.png" /><br><em>Manage your trading portfolio (Auto, Assisted, Standard)</em></td> 
-    <td><img src="http://vdapoi.altervista.org/10.png"  /><br><em>Transaction history</em></td> 
+    <td><img src="http://vdapoi.altervista.org/2.png"width="500" height="350"  /><br><em>Login</em></td> 
+    <td><img src="http://vdapoi.altervista.org/3.png"width="500" height="350"  /><br><em>Personal area</em></td> 
+    <td><img src="http://vdapoi.altervista.org/4.png"width="500" height="350" /><br><em>Add stocks</em></td> 
+    <td><img src="http://vdapoi.altervista.org/5.png"width="500" height="350"  /><br><em>Watching list</em></td> 
+    <td><img src="http://vdapoi.altervista.org/6.png"width="500" height="350" /><br><em>Graphs based on DataBase</em></td> 
+    <td><img src="http://vdapoi.altervista.org/7.png" width="500" height="350" /><br><em>Real time data stock</em></td> 
+    <td><img src="http://vdapoi.altervista.org/8.png"width="500" height="350" /><br><em>Standard portfolio</em></td> 
+    <td><img src="http://vdapoi.altervista.org/9.png"width="500" height="350" /><br><em>Manage your trading portfolio (Auto, Assisted, Standard)</em></td> 
+    <td><img src="http://vdapoi.altervista.org/10.png"width="500" height="350"  /><br><em>Transaction history</em></td> 
    </tr>
   </table>
 </div>
