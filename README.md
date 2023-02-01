@@ -58,13 +58,121 @@ A platform that allows users to simulate buying and selling stocks and create a 
 
 
 ## Project Structure
+````bash
+.
+├── Resources
+│   └── stock-market-html.zip
+├── Resources.zip
+├── aggiungi-azione.php
+├── aggiungi-sezione.php
+├── area-cliente.php
+├── azione.php
+├── azioni.php
+├── chiudi-posizione.php
+├── debugging
+│   ├── curl.php
+│   ├── get-name.php
+│   └── new-price.php
+├── dist
+│   ├── css
+│   │   ├── sb-admin-2.css
+│   │   └── sb-admin-2.min.css
+│   └── js
+│       ├── sb-admin-2.js
+│       └── sb-admin-2.min.js
+├── elimina-sezione.php
+├── grafico.php
+├── includes
+│   ├── config.php
+│   ├── connect.php
+│   ├── database-planning.txt
+│   ├── footer.php
+│   ├── header.php
+│   ├── info.txt
+│   └── navigation.php
+├── js
+│   └── sb-admin-2.js
+├── login.html
+├── login.php
+├── logo_size.jpg
+├── logo_size_invert.jpg
+├── logout.php
+├── modifica-sezione.php
+├── nuovi-dati.php
+├── sezione.php
+├── sezioni.php
+├── storico.php
+├── valori-cache-azione.php
+└── vendor
+    ├── bootstrap
+    │   ├── css
+    │   │   ├── bootstrap.css
+    │   │   └── bootstrap.min.css
+    │   ├── fonts
+    │   │   ├── glyphicons-halflings-regular.eot
+    │   │   ├── glyphicons-halflings-regular.svg
+    │   │   ├── glyphicons-halflings-regular.ttf
+    │   │   ├── glyphicons-halflings-regular.woff
+    │   │   └── glyphicons-halflings-regular.woff2
+    │   └── js
+    │       ├── bootstrap.js
+    │       └── bootstrap.min.js
+    ├── bootstrap-social
+    │   ├── bootstrap-social.css
+    │   ├── bootstrap-social.less
+    │   └── bootstrap-social.scss
+    ├── font-awesome
+    │   ├── css
+    │   │   ├── font-awesome.css
+    │   │   ├── font-awesome.css.map
+    │   │   └── font-awesome.min.css
+    │   ├── fonts
+    │   │   ├── FontAwesome.otf
+    │   │   ├── fontawesome-webfont.eot
+    │   │   ├── fontawesome-webfont.svg
+    │   │   ├── fontawesome-webfont.ttf
+    │   │   ├── fontawesome-webfont.woff
+    │   │   └── fontawesome-webfont.woff2
+    │   ├── less
+    │   │   ├── animated.less
+    │   │   ├── bordered-pulled.less
+    │   │   ├── core.less
+    │   │   ├── extras.less
+    │   │   ├── fixed-width.less
+    │   │   ├── font-awesome.less
+    │   │   ├── icons.less
+    │   │   ├── larger.less
+    │   │   ├── list.less
+    │   │   ├── mixins.less
+    │   │   ├── path.less
+    │   │   ├── rotated-flipped.less
+    │   │   ├── screen-reader.less
+    │   │   ├── spinning.less
+    │   │   ├── stacked.less
+    │   │   └── variables.less
+    │   └── scss
+    │       ├── _animated.scss
+    │       ├── _bordered-pulled.scss
+    │       ├── _core.scss
+    │       ├── _extras.scss
+    │       ├── _fixed-width.scss
+    │       ├── _icons.scss
+    │       ├── _larger.scss
+    │       ├── _list.scss
+    │       ├── _mixins.scss
+    │       ├── _path.scss
+    │       ├── _rotated-flipped.scss
+    │       ├── _screen-reader.scss
+    │       ├── _spinning.scss
+    │       ├── _stacked.scss
+    │       ├── _variables.scss
+    │       └── font-awesome.scss
+    └── jquery
+        ├── jquery.js
+        └── jquery.min.js
+````
+## Documentation
 
-    Xtetris               
-    ├── main.c                   
-    ├── tetris.c                  
-    └── tetris.h
-
-- `main.c` contains the main function and initial menu
-- `Tetris.c` implements the game logic
-- `Tetris.h` contains the declarations of functions used in Tetris.c
+You can find a detailed documentation of the project in Italian [here](https://github.com/andreramolivaz/TFY-MyBank/blob/54e2e6024bed0641cc970437b04c9ee5c0493735/report_elaborato-Andre%CC%81_Ramolivaz.pdf).
+An italian ppt that resume evrething is also avaiable [here](https://prezi.com/p/eendei5qgeo0/trading-for-you/).
 
