@@ -1,4 +1,4 @@
----
+
 title: "Title"
 author: "Author"
 date: "Date"
@@ -8,7 +8,7 @@ output:
     css: markdown.css
     includes:
       in_header: <div class="logos"><img src="http://vdapoi.altervista.org/image.png" width="220px" align="right"></div>
----
+
 
 
 
