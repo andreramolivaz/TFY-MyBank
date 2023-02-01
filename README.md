@@ -13,25 +13,25 @@ A platform that allows users to simulate buying and selling stocks and create a 
  <table>
    <tr>
 <td><img src="http://vdapoi.altervista.org/2.png"  /><br>
-  <em>singleplayer</em></td> 
+  <em>Login</em></td> 
     <td><img src="http://vdapoi.altervista.org/3.png"  /><br>
-  <em>multiplayer(player1 vs player2)</em></td> 
+  <em>Personal area</em></td> 
       <td><img src="http://vdapoi.altervista.org/4.png" /><br>
-  <em>multiplayer(player1 vs CPU)</em></td> 
+  <em>Add stocks</em></td> 
     </tr>   <tr>
           <td><img src="http://vdapoi.altervista.org/5.png"  /><br>
-  <em>multiplayer(player1 vs CPU)</em></td> 
+  <em>Watching list</em></td> 
           <td><img src="http://vdapoi.altervista.org/6.png" /><br>
-  <em>multiplayer(player1 vs CPU)</em></td> 
+  <em>Graphs based on DataBAse</em></td> 
           <td><img src="http://vdapoi.altervista.org/7.png"  /><br>
-  <em>multiplayer(player1 vs CPU)</em></td> 
+  <em>Real time data stock</em></td> 
       </tr>   <tr>
           <td><img src="http://vdapoi.altervista.org/8.png" /><br>
-  <em>multiplayer(player1 vs CPU)</em></td> 
+  <em>Standard portfolio</em></td> 
           <td><img src="http://vdapoi.altervista.org/9.png" /><br>
-  <em>multiplayer(player1 vs CPU)</em></td> 
+  <em>Manage your trading portfolio (Auto, Assisted, Standard)</em></td> 
           <td><img src="http://vdapoi.altervista.org/10.png"  /><br>
-  <em>multiplayer(player1 vs CPU)</em></td> 
+  <em>Transaction history</em></td> 
    </tr>
   </table>
 </div>
