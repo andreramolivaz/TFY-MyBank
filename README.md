@@ -6,7 +6,8 @@ A platform that allows users to simulate buying and selling stocks and create a 
 - Login to the webapp
 - Buy and sell stocks to build your portfolio
 - Create and manage a watchlist of your favorite stocks
-- Real-time stock data from trusted sources with some statistics
+- Real-time stock data from trusted sources with real time graphs
+- Multiple possibilities to manage your trading portfolio (Auto, Assisted, Standard)
 - Secure platform with CSRF protection and user authentication
 
 <div align="center">
@@ -22,7 +23,7 @@ A platform that allows users to simulate buying and selling stocks and create a 
           <td><img src="http://vdapoi.altervista.org/5.png"  /><br>
   <em>Watching list</em></td> 
           <td><img src="http://vdapoi.altervista.org/6.png" /><br>
-  <em>Graphs based on DataBAse</em></td> 
+  <em>Graphs based on DataBase</em></td> 
           <td><img src="http://vdapoi.altervista.org/7.png"  /><br>
   <em>Real time data stock</em></td> 
       </tr>   <tr>
