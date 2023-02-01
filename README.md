@@ -12,23 +12,23 @@ A platform that allows users to simulate buying and selling stocks and create a 
 <div align="center">
  <table>
    <tr>
-<td><img src="http://vdapoi.altervista.org/2.png" width="250" height="200" /><br>
+<td><img src="http://vdapoi.altervista.org/2.png"  /><br>
   <em>singleplayer</em></td> 
-    <td><img src="http://vdapoi.altervista.org/3.png" width="250" height="200" /><br>
+    <td><img src="http://vdapoi.altervista.org/3.png"  /><br>
   <em>multiplayer(player1 vs player2)</em></td> 
-      <td><img src="http://vdapoi.altervista.org/4.png" width="250" height="200" /><br>
+      <td><img src="http://vdapoi.altervista.org/4.png" /><br>
   <em>multiplayer(player1 vs CPU)</em></td> 
-          <td><img src="http://vdapoi.altervista.org/5.png" width="250" height="200" /><br>
+          <td><img src="http://vdapoi.altervista.org/5.png"  /><br>
   <em>multiplayer(player1 vs CPU)</em></td> 
-          <td><img src="http://vdapoi.altervista.org/6.png" width="250" height="200" /><br>
+          <td><img src="http://vdapoi.altervista.org/6.png" /><br>
   <em>multiplayer(player1 vs CPU)</em></td> 
-          <td><img src="http://vdapoi.altervista.org/7.png" width="250" height="200" /><br>
+          <td><img src="http://vdapoi.altervista.org/7.png"  /><br>
   <em>multiplayer(player1 vs CPU)</em></td> 
-          <td><img src="http://vdapoi.altervista.org/8.png" width="250" height="200" /><br>
+          <td><img src="http://vdapoi.altervista.org/8.png" /><br>
   <em>multiplayer(player1 vs CPU)</em></td> 
-          <td><img src="http://vdapoi.altervista.org/9.png" width="250" height="200" /><br>
+          <td><img src="http://vdapoi.altervista.org/9.png" /><br>
   <em>multiplayer(player1 vs CPU)</em></td> 
-          <td><img src="http://vdapoi.altervista.org/10.png" width="250" height="200" /><br>
+          <td><img src="http://vdapoi.altervista.org/10.png"  /><br>
   <em>multiplayer(player1 vs CPU)</em></td> 
    </tr>
   </table>
