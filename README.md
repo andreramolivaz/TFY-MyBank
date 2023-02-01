@@ -10,7 +10,9 @@ A platform that allows users to simulate buying and selling stocks and create a 
 - Multiple possibilities to manage your trading portfolio (Auto, Assisted, Standard)
 - Secure platform with CSRF protection and user authentication
 
-
+<div align="center">
+ <table>
+   <tr>
     <td><img src="http://vdapoi.altervista.org/2.png"width="1000px" /><br><em>Login</em></td> 
     <td><img src="http://vdapoi.altervista.org/3.png"width="1000px"  /><br><em>Personal area</em></td> 
     <td><img src="http://vdapoi.altervista.org/4.png"width="1000px"  /><br><em>Add stocks</em></td> 
@@ -21,7 +23,8 @@ A platform that allows users to simulate buying and selling stocks and create a 
     <td><img src="http://vdapoi.altervista.org/9.png"width="1000px"  /><br><em>Manage your trading portfoli</em></td> 
     <td><img src="http://vdapoi.altervista.org/10.png"width="1000px"  /><br><em>Transaction history</em></td> 
    </tr>
-
+  </table>
+</div>
 
 
 ## Getting Started
