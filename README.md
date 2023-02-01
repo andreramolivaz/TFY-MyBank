@@ -19,14 +19,12 @@ A platform that allows users to simulate buying and selling stocks and create a 
   <em>Personal area</em></td> 
       <td><img src="http://vdapoi.altervista.org/4.png" /><br>
   <em>Add stocks</em></td> 
-
           <td><img src="http://vdapoi.altervista.org/5.png"  /><br>
   <em>Watching list</em></td> 
           <td><img src="http://vdapoi.altervista.org/6.png" /><br>
   <em>Graphs based on DataBase</em></td> 
           <td><img src="http://vdapoi.altervista.org/7.png"  /><br>
   <em>Real time data stock</em></td> 
-
           <td><img src="http://vdapoi.altervista.org/8.png" /><br>
   <em>Standard portfolio</em></td> 
           <td><img src="http://vdapoi.altervista.org/9.png" /><br>
@@ -42,7 +40,7 @@ A platform that allows users to simulate buying and selling stocks and create a 
 1. Clone the repository and set up your local environment `$ git clone https://github.com/andreramolivaz/TFY-MyBank.git`
 2. Install PHP and a relational database software on your system (preferably XAMPP) 
 3. Config the connection to the DB [here](https://github.com/andreramolivaz/TFY-MyBank/blob/f034528e333319b39f30222281c74cd27af8eeab/includes/connect.php)
-4. Request fot the API keys for marketstack and Alpha Vantage in order to retrieve real-time stock data and then put the key [here (config file)](https://github.com/andreramolivaz/TFY-MyBank/blob/f034528e333319b39f30222281c74cd27af8eeab/includes/config.php)
+4. Request fot the API keys for marketstack and Alpha Vantage in order to retrieve real-time stock data and then put the key in the [config file)](https://github.com/andreramolivaz/TFY-MyBank/blob/f034528e333319b39f30222281c74cd27af8eeab/includes/config.php)
 
 ## DataBase Structure
 
