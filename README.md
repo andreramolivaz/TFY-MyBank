@@ -59,7 +59,7 @@ A platform that allows users to simulate buying and selling stocks and create a 
 
 ## Project Structure
 ````bash
-.
+TFY_MyBank
 ├── Resources
 │   └── stock-market-html.zip
 ├── Resources.zip
@@ -174,5 +174,6 @@ A platform that allows users to simulate buying and selling stocks and create a 
 ## Documentation
 
 You can find a detailed documentation of the project in Italian [here](https://github.com/andreramolivaz/TFY-MyBank/blob/54e2e6024bed0641cc970437b04c9ee5c0493735/report_elaborato-Andre%CC%81_Ramolivaz.pdf).
+
 An italian ppt that resume evrething is also avaiable [here](https://prezi.com/p/eendei5qgeo0/trading-for-you/).
 
