@@ -17,7 +17,6 @@ foreach ($stocks as $stock) {
 	$curlsymbol = $symbol.".".$exchange;
 
 	$curl = curl_init();
-//https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=GOOG&apikey=CKD2EM1LOSXO15WS&outputsize=compact
     curl_setopt_array($curl, array(
         CURLOPT_URL => "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=$symbol&apikey=$key&outputsize=compact",
         CURLOPT_RETURNTRANSFER => true,
