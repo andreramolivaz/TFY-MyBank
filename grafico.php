@@ -10,7 +10,7 @@ if(isset($_GET['days']) & !empty($_GET['days'])){ $sql .= " DESC LIMIT {$_GET['d
 $result = $db->prepare($sql);
 $res = $result->execute(array($_GET['scrip'])) or die(print_r($result->errorInfo(), true));
 $stockvals = $result->fetchAll(PDO::FETCH_ASSOC);
-
+// use array_reverst while $_GET['days'] is set
 if(isset($_GET['days']) & !empty($_GET['days'])){
   $stockvals = array_reverse($stockvals);
 }
@@ -27,17 +27,17 @@ if(isset($_GET['days']) & !empty($_GET['days'])){
       <?php
         foreach ($stockvals as $stockval) {
       ?>
-
+      // Date, Low, Open, Close, High
       ['<?php echo $stockval['giorno']; ?>', <?php echo $stockval['prezzo_minimo']; ?>, <?php echo $stockval['prezzo_apertura']; ?>, <?php echo $stockval['prezzo_chiusura']; ?>, <?php echo $stockval['prezzo_massimo']; ?>],
       <?php } ?>
-
+      // Treat first row as data as well.
     ], true);
 
     var options = {
       legend:'none',
       candlestick: {
-            fallingColor: { strokeWidth: 0, fill: '#a52714', stroke: '#a52714' }, // rosso
-            risingColor: { strokeWidth: 0, fill: '#0f9d58', stroke: '#0f9d58' }   // verde
+            fallingColor: { strokeWidth: 0, fill: '#a52714', stroke: '#a52714' }, // red
+            risingColor: { strokeWidth: 0, fill: '#0f9d58', stroke: '#0f9d58' }   // green
           }
     };
 

@@ -6,10 +6,12 @@
 require_once('includes/config.php');
 require_once('includes/connect.php');
 session_start();
+// CSRF Token Protection
 if(isset($_POST) & !empty($_POST)){
-
+    //print_r($_POST);
+    // PHP Form Validations
     if(empty($_POST['azione'])){ $errors[] = "Il campo 'Codice azione' è richiesto !"; }else{
-
+        // chekc the symbol is unique with db query (select)
         $sql = "SELECT * FROM azioni WHERE simbolo=?";
         $result = $db->prepare($sql);
         $res = $result->execute(array($_POST['azione'])) or die(print_r($result->errorInfo(), true));
@@ -19,7 +21,8 @@ if(isset($_POST) & !empty($_POST)){
         }
     }
 
-
+    //3. Validate the CSRF Token (CSRF Token Validation & CSRF Token Time Validation)
+    // CSRF Token Validation
     if(isset($_POST['csrf_token'])){
         if($_POST['csrf_token'] === $_SESSION['csrf_token']){
         }else{
@@ -29,20 +32,20 @@ if(isset($_POST) & !empty($_POST)){
         $errors[] = "Problema con la verifica del CSRF Token";
     }
 
-
-    $max_time = 60*60*24;
+    // CSRF Token Time Validation
+    $max_time = 60*60*24; // time in seconds
     if(isset($_SESSION['csrf_token_time'])){
-
+        // compare the time with maxtime
         $token_time = $_SESSION['csrf_token_time'];
-        if(($token_time + $max_time) >= time()){
+        if(($token_time + $max_time) >= time()){ // nothing here
         }else{
-            
+            // display error message and unset the CSRF Tokens
             $errors[] = "CSRF Token Scaduto";
             unset($_SESSION['csrf_token']);
             unset($_SESSION['csrf_token_time']);
         }
     }else{
-     
+        // unset the CSRF Tokens
         unset($_SESSION['csrf_token']);
         unset($_SESSION['csrf_token_time']);
     }
@@ -74,7 +77,7 @@ if(isset($_POST) & !empty($_POST)){
         $name = json_decode($response, true);
         $companyname = $name['data'][0]['name'];
 
-     
+        // Insert SQL query to insert into stocks table
         $sql = "INSERT INTO azioni (simbolo, nome, mercato) VALUES (:simbolo, :nome, :mercato)";
         $result = $db->prepare($sql);
         $values = array(':simbolo'   => $_POST['azione'],
@@ -83,7 +86,9 @@ if(isset($_POST) & !empty($_POST)){
                         );
         $res = $result->execute($values) or die(print_r($result->errorInfo(), true));
         if($res){
+            // get the last insert id and get the daily values of this stock and insert to stock_daily_values table
             $stockid = $db->lastInsertID();
+            // geting the response from the API
             $curl = curl_init();
 
             curl_setopt_array($curl, array(
@@ -106,14 +111,15 @@ if(isset($_POST) & !empty($_POST)){
                 echo "cURL Error :" . $err;
             }else{
                 //echo $response;
-                
+                // After that loop through the daily values and insert those values in daily_values table
+                // here we can get the weekly & monthly response and insert into respective tables, will do it in a seperate PHP page
                 $data = json_decode($response, true);
                 $dates = array_keys($data['Time Series (Daily)']);
                 foreach ($dates as $date) {
                     if(isset($data['Time Series (Daily)'][$date]) & !empty($data['Time Series (Daily)'][$date])){
                         if($data['Time Series (Daily)'][$date]['1. open'] != '0.0000'){
 
-                        
+                            // Insert into stock_daily_values table
                             $dailysql = "INSERT INTO valori_giornalieri_azione (idazione, prezzo_apertura, prezzo_massimo, prezzo_minimo, prezzo_chiusura, volume, giorno) VALUES (:idazione, :prezzo_apertura, :prezzo_massimo, :prezzo_minimo, :prezzo_chiusura, :volume, :giorno)";
                             $dailyresult = $db->prepare($dailysql);
                             $values = array(':idazione'      => $stockid,
@@ -126,7 +132,7 @@ if(isset($_POST) & !empty($_POST)){
                                             );
 
                             $dailyres = $dailyresult->execute($values) or die(print_r($dailyresult->errorInfo(), true));
-                            
+                            //echo $date . " Added<br>";
 
                         }
                     }
@@ -139,12 +145,12 @@ if(isset($_POST) & !empty($_POST)){
     //
     //
     //
-
+//1. Create CSRF Token
 $token = md5(uniqid(rand(), TRUE));
 $_SESSION['csrf_token'] = $token;
 $_SESSION['csrf_token_time'] = time();
 
-
+//2. Add CSRF Token to Form
 
 include('includes/header.php');
 include('includes/navigation.php');
@@ -224,14 +230,14 @@ $result = $db->prepare($sql);
 $result->execute() or die(print_r($result->errorInfo(), true));
 $stocks = $result->fetchAll(PDO::FETCH_ASSOC);
 foreach ($stocks as $stock) {
-
+    // We can get the number of days by counting the number of rows in db
     $dayssql = "SELECT * FROM valori_giornalieri_azione WHERE idazione=?";
     $daysresult = $db->prepare($dayssql);
     $daysres = $daysresult->execute(array($stock['id'])) or die(print_r($daysresult->errorInfo(), true));
     $dayscount = $daysresult->rowCount();
     $stocklh = $daysresult->fetchAll(PDO::FETCH_ASSOC);
 
-   
+    // we should get the first & last records for Start & Current Price
     $sql = "SELECT * FROM valori_giornalieri_azione WHERE idazione=? ORDER BY giorno ASC LIMIT 1";
     $result = $db->prepare($sql);
     $result->execute(array($stock['id'])) or die(print_r($result->errorInfo(), true));
@@ -242,12 +248,12 @@ foreach ($stocks as $stock) {
     $result->execute(array($stock['id'])) or die(print_r($result->errorInfo(), true));
     $stockcurrentvals = $result->fetch(PDO::FETCH_ASSOC);
 
-
+    // calculating All time low & Highs from full record set
     $pricelh = array_column($stocklh, 'prezzo_apertura');
     $stocklow = $stocklh[array_search(min($pricelh), $pricelh)];
     $stockhigh = $stocklh[array_search(max($pricelh), $pricelh)];
 
-
+    // Insert into cache_stock_values table
     $sql = "INSERT INTO valori_cache_azione (idazione, giorni, prezzo_iniziale, data_iniziale, prezzo_attuale, data_attuale, prezzo_atl, data_atl, prezzo_ath, data_ath) VALUES (:idazione, :giorni, :prezzo_iniziale, :data_iniziale, :prezzo_attuale, :data_attuale, :prezzo_atl, :data_atl, :prezzo_ath, :data_ath)";
     $result = $db->prepare($sql);
     $values = array(':idazione'      => $stock['id'],
@@ -264,7 +270,11 @@ foreach ($stocks as $stock) {
 
     $res = $result->execute($values) or die(print_r($result->errorInfo(), true));
 
-
+    //if($res){
+       // echo $stock['id'] . " Added";
+    //}else{
+       // echo $stock['id'] . " Failed to Add";
+   // }
 }
 ?>
 <?php
