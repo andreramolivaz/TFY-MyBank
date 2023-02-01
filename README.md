@@ -1,16 +1,7 @@
-
-title: "Title"
-author: "Author"
-date: "Date"
-
-output: 
-  html_document:
-    css: markdown.css
-    includes:
-      in_header: <div class="logos"><img src="http://vdapoi.altervista.org/image.png" width="220px" align="right"></div>
+ 
 
 
 
 
-# TFY-MyBank.
+# TFY-MyBank <div class="logos"><img src="http://vdapoi.altervista.org/image.png" width="220px" align="right"></div>
 Database creation (SQL) via API (JSON parsification) for trading of financial instruments, with sentiment analysis of the market and users preferences trends. Incorporated the stocks performances with graphs and articles. Designed the front-end interface (HTML, php, Bootstrap) for the buying/selling simulation, portfolio status visualization and to access the trading predictive alghoritms optionalities (Auto, Standard, Assisted). Created ancillaries’ items such as: session, cookies and CSRF tokens.
