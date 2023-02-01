@@ -1,6 +1,6 @@
 # <div class><img src="http://vdapoi.altervista.org/image.png" width="50px" align="left"></div> TFY-MyBank 
 
-A platform that allows users to simulate buying and selling stocks and create a watchlist of their favorite stocks. The portfolio data is stored in a relational database and real-time stock data is obtained through free API calls from [marketstack](http://api.marketstack.com) and [Alpha Vantage](https://www.alphavantage.co/). Portfolio status visualization and to access the trading predictive alghoritms optionalities (Auto, Standard, Assisted)
+A platform that allows users to simulate buying and selling stocks and create a watchlist of their favorite stocks. The portfolio data is stored in a relational database and real-time stock data is obtained through free API calls (in JSON format then stored) from [marketstack](http://api.marketstack.com) and [Alpha Vantage](https://www.alphavantage.co/). Portfolio status visualization and access to the trading predictive alghoritms optionalities (Auto, Standard, Assisted).
 
 ## Features
 - Login to the webapp
@@ -40,9 +40,9 @@ A platform that allows users to simulate buying and selling stocks and create a 
 
 ## Getting Started
 1. Clone the repository and set up your local environment `$ git clone https://github.com/andreramolivaz/TFY-MyBank.git`
-2. Install PHP and a relational database on your system (I used XAMPP) 
+2. Install PHP and a relational database software on your system (preferably XAMPP) 
 3. Config the connection to the DB [here](https://github.com/andreramolivaz/TFY-MyBank/blob/f034528e333319b39f30222281c74cd27af8eeab/includes/connect.php)
-4. Request fot the API keys for marketstack and Alpha Vantage in order to retrieve real-time stock data and put them [here (config file)](https://github.com/andreramolivaz/TFY-MyBank/blob/f034528e333319b39f30222281c74cd27af8eeab/includes/config.php)
+4. Request fot the API keys for marketstack and Alpha Vantage in order to retrieve real-time stock data and then put the key [here (config file)](https://github.com/andreramolivaz/TFY-MyBank/blob/f034528e333319b39f30222281c74cd27af8eeab/includes/config.php)
 
 ## DataBase Structure
 
@@ -50,7 +50,7 @@ A platform that allows users to simulate buying and selling stocks and create a 
 <div align="center">
  <table>
    <tr>
-<td><img src="http://vdapoi.altervista.org/1.png" width="250" height="200" /><br>
+<td><img src="http://vdapoi.altervista.org/1.png" width="500" height="350" /><br>
   <em>ER Diagram</em></td> 
    </tr>
   </table>
