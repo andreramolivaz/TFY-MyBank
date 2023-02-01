@@ -13,7 +13,7 @@ A platform that allows users to simulate buying and selling stocks and create a 
 <div align="center">
  <table>
    <tr>
-    <td><img src="http://vdapoi.altervista.org/2.png"width="100px" /><br><em>Login</em></td> 
+    <td><img src="http://vdapoi.altervista.org/2.png"width="1000px" /><br><em>Login</em></td> 
     <td><img src="http://vdapoi.altervista.org/3.png"width="500" height="350"  /><br><em>Personal area</em></td> 
     <td><img src="http://vdapoi.altervista.org/4.png"width="500" height="350" /><br><em>Add stocks</em></td> 
     <td><img src="http://vdapoi.altervista.org/5.png"width="500" height="350"  /><br><em>Watching list</em></td> 
