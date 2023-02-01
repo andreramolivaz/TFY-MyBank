@@ -19,14 +19,14 @@ A platform that allows users to simulate buying and selling stocks and create a 
   <em>Personal area</em></td> 
       <td><img src="http://vdapoi.altervista.org/4.png" /><br>
   <em>Add stocks</em></td> 
-    </tr>   <tr>
+
           <td><img src="http://vdapoi.altervista.org/5.png"  /><br>
   <em>Watching list</em></td> 
           <td><img src="http://vdapoi.altervista.org/6.png" /><br>
   <em>Graphs based on DataBase</em></td> 
           <td><img src="http://vdapoi.altervista.org/7.png"  /><br>
   <em>Real time data stock</em></td> 
-      </tr>   <tr>
+
           <td><img src="http://vdapoi.altervista.org/8.png" /><br>
   <em>Standard portfolio</em></td> 
           <td><img src="http://vdapoi.altervista.org/9.png" /><br>
