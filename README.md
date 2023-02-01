@@ -18,12 +18,14 @@ A platform that allows users to simulate buying and selling stocks and create a 
   <em>multiplayer(player1 vs player2)</em></td> 
       <td><img src="http://vdapoi.altervista.org/4.png" /><br>
   <em>multiplayer(player1 vs CPU)</em></td> 
+    </tr>   <tr>
           <td><img src="http://vdapoi.altervista.org/5.png"  /><br>
   <em>multiplayer(player1 vs CPU)</em></td> 
           <td><img src="http://vdapoi.altervista.org/6.png" /><br>
   <em>multiplayer(player1 vs CPU)</em></td> 
           <td><img src="http://vdapoi.altervista.org/7.png"  /><br>
   <em>multiplayer(player1 vs CPU)</em></td> 
+      </tr>   <tr>
           <td><img src="http://vdapoi.altervista.org/8.png" /><br>
   <em>multiplayer(player1 vs CPU)</em></td> 
           <td><img src="http://vdapoi.altervista.org/9.png" /><br>
