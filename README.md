@@ -1,6 +1,6 @@
 # <div class><img src="http://vdapoi.altervista.org/image.png" width="50px" align="left"></div> TFY-MyBank 
 
-A platform that allows users to simulate buying and selling stocks and create a watchlist of their favorite stocks. The portfolio data is stored in a relational database and real-time stock data is obtained through free API calls (in JSON format then stored) from [marketstack](http://api.marketstack.com) and [Alpha Vantage](https://www.alphavantage.co/). Portfolio status visualization and access to the trading predictive alghoritms optionalities (Auto, Standard, Assisted).
+A platform that allows users to simulate buying and selling stocks and create a watchlist of their favorite stocks. The portfolio data is stored in a relational database and real-time stock data is obtained through free API calls (in JSON format then stored) from [marketstack](http://api.marketstack.com) and [Alpha Vantage](https://www.alphavantage.co/). Portfolio status visualization and access to the trading predictive alghoritms optionalities (Auto, Standard, Assisted -> to be implemented).
 
 ## Features
 - Login to the webapp
